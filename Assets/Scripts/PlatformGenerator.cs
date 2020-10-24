@@ -9,7 +9,7 @@ public class PlatformGenerator : MonoBehaviour
     public int numOfPlatforms = 100;
     public float levelWidth = 3f;
     public float minY = .2f;
-    public float maxY = 1f;
+    public float maxY = .8f;
 
     // Start is called before the first frame update
     void Start()

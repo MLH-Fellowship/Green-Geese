@@ -7,7 +7,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public float movementSpeed = 10f;
+    public float movementSpeed = 8f;
 
     // Assigning rb as Rigidbody2D component 
     Rigidbody2D rb;

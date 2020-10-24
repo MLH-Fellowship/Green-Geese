@@ -558,7 +558,7 @@ MonoBehaviour:
   numOfPlatforms: 100
   levelWidth: 3
   minY: 0.2
-  maxY: 1
+  maxY: 0.8
 --- !u!4 &777009939
 Transform:
   m_ObjectHideFlags: 0
