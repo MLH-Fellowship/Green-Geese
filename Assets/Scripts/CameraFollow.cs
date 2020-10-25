@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -12,6 +13,13 @@ public class CameraFollow : MonoBehaviour
         {
             Vector3 newPos = new Vector3(transform.position.x, target.position.y, transform.position.z);
             transform.position = newPos;
+            Debug.Log(newPos);
+        }
+
+        else if (target.position.y < transform.position.y - 10)
+        {
+            Debug.Log("end");
+            SceneManager.LoadScene(2);
         }
     }
 }
