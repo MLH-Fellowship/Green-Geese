@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformGenerator : MonoBehaviour
 {
-    public GameObject platformPrefab;
+    public GameObject[] platforms = new GameObject[3];
 
     public int numOfPlatforms = 100;
     public float levelWidth = 3f;
@@ -15,11 +15,11 @@ public class PlatformGenerator : MonoBehaviour
     void Start()
     {
         Vector3 spawnPosition = new Vector3();
-        for (int i = 0; i < numOfPlatforms; i++)
-        {
-            spawnPosition.y += Random.Range(minY, maxY);
+
+        for (int i = 0; i < numOfPlatforms; i++) {
+            spawnPosition.y += (Random.Range(minY, maxY) / 2);
             spawnPosition.x = Random.Range(-levelWidth, levelWidth);
-            Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
+            Instantiate(platforms[Random.Range(0, 3)], spawnPosition, Quaternion.identity);            
         }
     }
 
