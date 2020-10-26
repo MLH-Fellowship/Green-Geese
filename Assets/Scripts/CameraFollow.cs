@@ -13,13 +13,17 @@ public class CameraFollow : MonoBehaviour
         {
             Vector3 newPos = new Vector3(transform.position.x, target.position.y, transform.position.z);
             transform.position = newPos;
+<<<<<<< HEAD
             ScoreScript.scoreValue++;
             Debug.Log(newPos);
+=======
+            // Debug.Log(newPos);
+>>>>>>> b779a48... new platforms
         }
 
         else if (target.position.y < transform.position.y - 10)
         {
-            Debug.Log("end");
+            // Debug.Log("end");
             SceneManager.LoadScene(2);
         }
     }
