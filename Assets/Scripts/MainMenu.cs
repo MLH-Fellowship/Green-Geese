@@ -7,13 +7,20 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
+        // Old Code for LoadScene: SceneManager.GetActiveScene().buildIndex + 1
+        // Changed it to 1 so that LoadScene can be called from all Scenes
     }
 
     public void QuitGame()
     {
         Debug.Log("QUIT ");
         Application.Quit();
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
     }
 
 

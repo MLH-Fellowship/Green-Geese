@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        // Debug.Log(rb);
     }
 
     void Update()
