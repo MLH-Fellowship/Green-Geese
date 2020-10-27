@@ -15,4 +15,10 @@ public class OptionsMenu : MonoBehaviour
         // sets the AudioMixer value to volume 
         audioMixer.SetFloat("volume", volume);
     }
+
+    public void SetQuality(int qualityIndex)
+    {
+        QualitySettings.SetQualityLevel(qualityIndex);
+    }
+
 }
