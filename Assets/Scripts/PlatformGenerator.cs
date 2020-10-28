@@ -6,7 +6,7 @@ public class PlatformGenerator : MonoBehaviour
 {
     public GameObject[] platforms = new GameObject[3];
 
-    public int numOfPlatforms = 100;
+    public int numOfPlatforms = 1000;
     public float levelWidth = 3f;
     public float minY = 100.9f;
     public float maxY = 210.1f;

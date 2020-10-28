@@ -367,7 +367,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.5803922, g: 0.8117647, b: 0.9411765, a: 0}
+  m_BackGroundColor: {r: 0.5803922, g: 0.8117647, b: 0.9411765, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1404,7 +1404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 0.8787314
+  m_AspectRatio: 1.330224
 --- !u!114 &626090023
 MonoBehaviour:
   m_ObjectHideFlags: 0
