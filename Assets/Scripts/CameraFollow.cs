@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour
 >>>>>>> b779a48... new platforms
         }
 
-        else if (target.position.y < transform.position.y - 10)
+        else if (target.position.y < transform.position.y - 7)
         {
             // Debug.Log("end");
             SceneManager.LoadScene(2);
