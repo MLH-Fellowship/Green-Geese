@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour
         {
             Vector3 newPos = new Vector3(transform.position.x, target.position.y, transform.position.z);
             transform.position = newPos;
+            ScoreScript.scoreValue++;
             Debug.Log(newPos);
         }
 
