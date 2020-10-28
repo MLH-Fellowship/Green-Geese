@@ -14,11 +14,16 @@ public class CameraFollow : MonoBehaviour
             Vector3 newPos = new Vector3(transform.position.x, target.position.y, transform.position.z);
             transform.position = newPos;
 <<<<<<< HEAD
+<<<<<<< HEAD
             ScoreScript.scoreValue++;
             Debug.Log(newPos);
 =======
             // Debug.Log(newPos);
 >>>>>>> b779a48... new platforms
+=======
+            ScoreScript.scoreValue++;
+            Debug.Log(newPos);
+>>>>>>> e5b66f9... add functionality to score
         }
 
         else if (target.position.y < transform.position.y - 7)
