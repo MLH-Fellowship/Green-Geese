@@ -8,8 +8,8 @@ public class PlatformGenerator : MonoBehaviour
 
     public int numOfPlatforms = 100;
     public float levelWidth = 3f;
-    public float minY = .2f;
-    public float maxY = .6f;
+    public float minY = 100.9f;
+    public float maxY = 210.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class PlatformGenerator : MonoBehaviour
         for (int i = 0; i < numOfPlatforms; i++) {
             spawnPosition.y += (Random.Range(minY, maxY) / 2);
             spawnPosition.x = Random.Range(-levelWidth, levelWidth);
-            Instantiate(platforms[Random.Range(0, 2)], spawnPosition, Quaternion.identity);            
+            Instantiate(platforms[Random.Range(0, 3)], spawnPosition, Quaternion.identity);            
         }
     }
 

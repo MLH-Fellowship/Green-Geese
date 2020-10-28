@@ -15,6 +15,7 @@ public class Platform : MonoBehaviour
                 Vector2 velocity = rb.velocity;
                 velocity.y = jumpPower;
                 rb.velocity = velocity;
+                Debug.Log(velocity);
             }
         }
     }
